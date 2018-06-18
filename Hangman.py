@@ -27,7 +27,10 @@ while tahy > 0:
         break         
     print    
     pokus = input("       Uhádni písmeno: ") 
-    pokusy += pokus   
+    if len(pokus) > 1:
+        print ("Můžeš zadat pouze jedno písmeno!")
+    else:
+        pokusy += pokus   
     print ("\n" * 100)             
     if pokus not in slovo:  
         tahy -= 1       
